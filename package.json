@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "A Minimal  Angular 1.x + Webpack Boilerplate",
   "main": "webpack.config.js",
+  "keywords": [
+    "angular",
+    "webpack",
+    "boilerplate",
+    "angular1x"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

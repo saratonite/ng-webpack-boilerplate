@@ -1,6 +1,6 @@
 {
   "name": "ng-webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Minimal  Angular 1.x + Webpack Boilerplate",
   "main": "webpack.config.js",
   "keywords": [

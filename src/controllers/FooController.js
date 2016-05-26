@@ -5,6 +5,8 @@ var appControllers = ng.module('app.controllers',[])
 .controller('FooControlller',function($scope,Say){
 
   $scope.name = "Ng-Webpack-Boilerplate";
+
+  $scope.app = require('../../package.json');
   $scope.hai = function(){
 
     Say.hello();

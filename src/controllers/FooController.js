@@ -16,7 +16,6 @@ var appControllers = ng.module('app.controllers',[])
 
   }
 
-
   angular.element(document).ready(function () {
         document.body.bgColor = "#e74c3c";
   });

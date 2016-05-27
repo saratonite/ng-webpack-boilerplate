@@ -2,7 +2,13 @@
 import ng from 'angular';
 var appControllers = ng.module('app.controllers')
 
-.controller('BarControlller',function($scope){
+.controller('BarControlller',function($scope,HelloService){
+
+  $scope.name = HelloService.name;
+
+  angular.element(document).ready(function(){
+    document.body.bgColor = "#9b59b6";
+  });
 
 });
 

@@ -2,20 +2,23 @@
 import ng from 'angular';
 var appControllers = ng.module('app.controllers',[])
 
-.controller('FooControlller',function($scope,Say){
+.controller('FooControlller',function($scope,HelloService){
 
   $scope.name = "Ng-Webpack-Boilerplate";
 
   $scope.app = require('../../package.json');
+
+  $scope.name = HelloService.name;
+
   $scope.hai = function(){
 
-    Say.hello();
+    $scope.name = HelloService.hello();
 
   }
 
 
   angular.element(document).ready(function () {
-        document.body.bgColor = "#f56";
+        document.body.bgColor = "#e74c3c";
   });
 
 

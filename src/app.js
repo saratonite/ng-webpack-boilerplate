@@ -5,9 +5,7 @@ import ngRoute from 'angular-route';
 import appControllers from './controllers/FooController';
 import barControllers from './controllers/BarController';
 
-
-
-import ApiServices from './services/ApiService';
+import ApiServices from './services/HelloService';
 
 ng.module('app',[ngRoute,'app.controllers','app.controllers','app.services'])
 

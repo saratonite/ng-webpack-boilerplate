@@ -3,9 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Angular 1.x + Webpack Boilerplate </title>
+    <style media="screen">
+
+    html,body{
+      font-family: sans-serif;
+    }
+
+    .main{
+
+      color:#efefef;
+      margin:auto;
+      width:80%;
+
+    }
+    .btn-hai{
+      padding: 1em 1.5em;
+      border:none;
+      width:10em;
+      background-color: #27ae60;
+      box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.75);
+      border-radius: 3px;
+
+    }
+    .btn-hai:hover{
+
+      background-color: #2ecc71;
+      box-shadow: 2px 3px 13px 0px rgba(3,2,1,0.75);
+
+    }
+    .nav{
+      background: gold;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+    }
+    .nav li{
+        float: left;
+        list-style: none;
+
+    }
+    .nav li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .nav li a:hover{
+      background-color: #8e44ad;
+    }
+
+    .center-content{
+      text-align: center;
+    }
+
+    </style>
   </head>
   <body >
-    <ng-view></ng-view>
+
+    <div class="main" style="">
+
+      <ul class="nav">
+        <li><a href="#foo">Foo</a></li>
+        <li><a href="#bar">Bar</a></li>
+      </ul>
+      <ng-view></ng-view>
+
+    </div>
   <script src="dist/build.js"></script>
   </body>
 </html>

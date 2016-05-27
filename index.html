@@ -59,6 +59,17 @@
     }
 
     </style>
+    <style>
+    .page.ng-enter {
+      transition:0.5s linear all;
+      transform:translateY(-100px);
+    }
+    .page.ng-leave {
+      transition:0.5s linear all;
+      -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    }
+
+    </style>
   </head>
   <body >
 
@@ -68,7 +79,7 @@
         <li><a href="#foo">Foo</a></li>
         <li><a href="#bar">Bar</a></li>
       </ul>
-      <ng-view></ng-view>
+      <ng-view class="page"></ng-view>
 
     </div>
   <script src="dist/build.js"></script>

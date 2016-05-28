@@ -2,7 +2,7 @@
 import ng from 'angular';
 var appControllers = ng.module('app.controllers',[])
 
-.controller('FooControlller',function($scope,HelloService){
+.controller('FooControlller',['$scope','HelloService',function($scope,HelloService){
 
   $scope.name = "Ng-Webpack-Boilerplate";
 
@@ -21,6 +21,6 @@ var appControllers = ng.module('app.controllers',[])
   });
 
 
-});
+}]);
 
 export default appControllers;

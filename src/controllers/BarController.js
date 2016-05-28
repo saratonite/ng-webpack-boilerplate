@@ -2,7 +2,7 @@
 import ng from 'angular';
 var appControllers = ng.module('app.controllers')
 
-.controller('BarControlller',function($scope,HelloService){
+.controller('BarControlller',['$scope','HelloService',function($scope,HelloService){
 
   $scope.name = HelloService.name;
 
@@ -10,6 +10,6 @@ var appControllers = ng.module('app.controllers')
     document.body.bgColor = "#9b59b6";
   });
 
-});
+}]);
 
 export default appControllers;
